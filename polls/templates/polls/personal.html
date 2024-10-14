@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en">
+
+<html>
+
+<head>
+    <title>Scoops Personal Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+    table, tr, th, td {
+        border: 1px black;
+    }
+    p{
+        text-align: center;
+        font-size: 115%;
+        color: black;
+    }
+    h1{
+        text-align: center;
+        font-size: 300%;
+    }
+    hr{
+        color: deeppink;
+    }
+    i{
+        color: rebeccapurple;
+        text-align: center;
+        font-size: 110%;
+    }
+    img{
+        align: middle;
+        float: left;
+    }
+    button{
+      align-content: center;
+    }
+</style>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "IceCreamPhoto.jpg"
+  } else {
+    pic = "VanillaIceCream.webp"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<body style="background-color: wheat">
+<!-- This is an example Comment -->
+<hr>
+
+<h1>Scoop's Personal Web-site</h1>
+
+<hr>
+
+<img id="myImage" src="./polls/IceCreamPhoto.jpg" alt="Ice Cream Scoop Scooping up Chocolate Ice Cream">
+
+<p>My Personal Goal is to : <br><q><i>Love the world more than the maximum amount of love the world might send me</i></q></p>
+
+<p>As well as<br><q><i>Acquire all the knowledge that will fit in my brain; Knowledge is power</i></q></p>
+
+<hr>
+
+<button type="button" onclick="light(0)">Chocolate Ice Cream</button>
+<button type="button" onclick="light(1)">Vanilla Ice Cream</button>
+
+<br>
+
+</body>
+
+<hr>
+
+<table>
+    <tr>
+        <th>test1</th>
+        <th>test2</th>
+        <th>test3</th>
+    </tr>
+    <tr>
+        <td>this is test1 first row</td>
+        <td>this is test2 first row</td>
+        <td>this is test3 first row</td>
+    </tr>
+    <tr>
+        <td>this is test1 last row</td>
+        <td>this is test2 last row</td>
+        <td>this is test3 last row</td>
+    </tr>
+</table>
+
+</html>
