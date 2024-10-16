@@ -1,0 +1,27 @@
+body {
+    background: mediumpurple;
+}
+hr {
+    border-top: 8px solid deeppink;
+    border-radius: 1000px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+ul {
+    list-style-type: upper-roman;
+    background: cadetblue;
+    border-radius: 15px;
+    margin: 30px;
+    margin-left: 50px;
+}
+li{
+    margin: 15px;
+    border-radius: 10px;
+    background: greenyellow;
+}
+li a {
+    color: black;
+}
+img{
+    margin: 10px;
+}

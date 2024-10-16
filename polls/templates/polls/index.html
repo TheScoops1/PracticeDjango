@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 <h1> This is the Index of available polls</h1>
 <hr>
 <h4> Click on the link to the question you wish to vote on:</h4>
@@ -14,7 +18,9 @@
 <h2>These are the links for my personal websites and various pages</h2>
 <hr>
 <h4>The Link below is for my personal website</h4>
-<li><a href="{%  url 'polls:personal' %}">My Personal Website</a></li>
+    <ul>
+        <li><a href="{%  url 'polls:personal' %}">My Personal Website</a></li>
+    </ul>
 {% for question in latest_question_list %}
     <hr>
     <h2> This is the Results for question : {{ question.question_text }}</h2>

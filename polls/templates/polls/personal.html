@@ -2,6 +2,9 @@
 
 <html>
 
+{% load static %}
+
+<link rel="stylesheet" href="{% static "polls/style.css" %}">
 <head>
     <title>Scoops Personal Website</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -40,9 +43,9 @@
 function light(sw) {
   var pic;
   if (sw == 0) {
-    pic = "IceCreamPhoto.jpg"
+    pic = "{% static 'polls/images/IceCreamPhoto.jpg' %}"
   } else {
-    pic = "VanillaIceCream.webp"
+    pic = "{% static 'polls/images/VanillaIceCream.webp' %}"
   }
   document.getElementById('myImage').src = pic;
 }
@@ -52,11 +55,11 @@ function light(sw) {
 <!-- This is an example Comment -->
 <hr>
 
-<h1>Scoop's Personal Web-site</h1>
+<h1>Scoop's Personal Website</h1>
 
 <hr>
 
-<img id="myImage" src="./polls/IceCreamPhoto.jpg" alt="Ice Cream Scoop Scooping up Chocolate Ice Cream">
+<img id="myImage" src="{% static 'polls/images/IceCreamPhoto.jpg' %}" alt="Ice Cream Scoop Scooping up Chocolate Ice Cream">
 
 <p>My Personal Goal is to : <br><q><i>Love the world more than the maximum amount of love the world might send me</i></q></p>
 
